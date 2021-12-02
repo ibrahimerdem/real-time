@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'channels',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -70,7 +71,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'RealTimeApp.wsgi.application'
+#WSGI_APPLICATION = 'RealTimeApp.wsgi.application'
+ASGI_APPLICATION = 'RealTimeApp.routing.application'
 
 
 # Database
